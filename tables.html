@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .third_tab {
+            border: 1px solid #69c;
+            border-collapse: separate;
+            empty-cells: hide;
+        }
+
+        .third_tr,
+        .third_th {
+            border: 2px solid #69c;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            line-height: 1.1;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            background: radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);
+            color: #0C213B;
+        }
+
+        caption {
+            font-family: annabelle, cursive;
+            font-weight: bold;
+            font-size: 2em;
+            padding: 10px;
+            color: #F3CD26;
+            text-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+        }
+
+        caption:before,
+        caption:after {
+            content: "\274B";
+            color: #A9E2CC;
+            margin: 0 10px;
+        }
+
+        th {
+            padding: 10px;
+            border: 1px solid #A9E2CC;
+        }
+
+        td {
+            font-size: 0.8em;
+            padding: 5px 7px;
+            border: 1px solid #A9E2CC;
+        }
+
+        .first {
+            font-size: 1em;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<p>First</p>
+
+<table>
+    <tr>
+        <td rowspan="2" class="first">№</td>
+        <td colspan="2" style="font-weight: 600 ; text-align:center;">Холодные блюда</td>
+    </tr>
+    <tr>
+        <td class="first">Салаты</td>
+        <td class="first">Закуски</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="first">1</td>
+        <td>Винегрет</td>
+        <td rowspan="12">Язык с хреном</td>
+    </tr>
+    <tr>
+        <td>Оливье</td>
+    </tr>
+    <tr>
+        <td>Сельдь под "шубой"</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="first">2</td>
+        <td>Севиче из гребешков</td>
+    </tr>
+    <tr>
+        <td>Тимбал из авокадо и тунца</td>
+    </tr>
+    <tr>
+        <td>Фасоль с ветчиной</td>
+    </tr>
+    <tr>
+        <td rowspan="3" class="first">3</td>
+        <td>Вогезский салат</td>
+    </tr>
+    <tr>
+        <td>Салат "Панзанелла"</td>
+
+    </tr>
+    <tr>
+        <td>Тар-тар</td>
+
+    </tr>
+
+    <tr>
+        <td rowspan="3" class="first">4</td>
+        <td>Винегрет</td>
+    </tr>
+    <tr>
+        <td>Оливье</td>
+    </tr>
+    <tr>
+        <td>Сельдь под "шубой"</td>
+
+    </tr>
+    <tr>
+        <td class="first">5</td>
+        <td>Севиче из гребешков</td>
+        <td>Эмпанадас</td>
+    </tr>
+    <tr>
+        <td class="first">6</td>
+        <td>Вогезский салат</td>
+        <td>Рийет из курицы</td>
+    </tr>
+    <tr>
+        <td class="first">7</td>
+        <td>Винегрет</td>
+        <td rowspan="2">Язык с хреном</td>
+    </tr>
+    <tr>
+        <td class="first">8</td>
+        <td>Севиче из гребешков</td>
+    </tr>
+    <tr>
+</table>
+
+<P>Third</p>
+<table class="third_tab">
+    <tr>
+        <td class="third_th">Company</td>
+        <td class="third_th">Q1</td>
+        <td class="third_th">Q2</td>
+        <td class="third_th">Q3</td>
+    </tr>
+    <tr>
+        <td class="third_th">Microsoft</td>
+        <td class="third_th">20.3</td>
+        <td class="third_th">30.5</td>
+        <td class="third_th"></td>
+    </tr>
+    <tr>
+        <td class="third_th">Google</td>
+        <td class="third_th">50.2</td>
+        <td class="third_th">40.63</td>
+        <td class="third_th">45.23</td>
+    </tr>
+</table>
+
+<p>Fourth</p>
+<table>
+    <tr>
+        <td class="third_th" style="height:40px; background-color: #69c;" colspan="5">Шапка</td>
+    </tr>
+    <tr>
+        <td class="third_th">Меню</td>
+        <td class="third_th">Меню</td>
+        <td class="third_th">Меню</td>
+        <td class="third_th">Меню</td>
+        <td class="third_th">Меню</td>
+    </tr>
+    <tr>
+        <td class="third_th" style="height:100px; background-color: #69c;" colspan="2">Новости</td>
+        <td class="third_th" style="height:100px" colspan="3">Контент</td>
+    </tr>
+
+</table>
+
+<p>Fourth</p>
+<table>
+    <tr>
+        <td class="third_th" style="height:40px; width: 100px; background-color: teal;">Шапка</td>
+        <td class="third_th" style="height: 100px" rowspan="2">Контент</td>
+    </tr>
+    <tr>
+        <td class="third_th">Меню</td>
+    </tr>
+    <tr>
+        <td class="third_th" style=" background-color: teal;" colspan="2">низ сайта</td>
+    </tr>
+
+</table>
+<p>Fourth</p>
+<table>
+
+    <tr>
+        <td class="third_th" style="height: 100px; background-color: teal" rowspan="3">Новости</td>
+        <td class="third_th" style="height:40px; width: 100px; background-color: floralwhite;">Шапка</td>
+
+    </tr>
+    <tr>
+        <td class="third_th" style="background-color: deepskyblue">Меню</td>
+    </tr>
+    <tr>
+        <td class="third_th" style=" background-color: deepskyblue; height: 100px;" colspan="2">
+            Контент</td>
+    </tr>
+
+</table>
+</body>
+
+</html>
